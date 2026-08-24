@@ -13,37 +13,356 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
+			<h1 class="hero-title">Hi, I'm Your Name!</h1>
+			<p class="subtitle">
+				💻 Your Role · 🎵 Hobby One · 🏓 Hobby Two · 📸 Hobby Three
 			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+
+			<section class="intro">
+				<p class="eyebrow">About Me</p>
+
+				<h1>
+					A short headline about<br />
+					what you build or do
+				</h1>
+
+				<p class="lead">
+					With over <strong>X years of experience</strong>, I specialize in
+					building things that matter — replace this with a short paragraph
+					about your background, focus, and what makes your work
+					<strong>different</strong>.
+				</p>
+			</section>
+
+			<section class="experience">
+				<h2>Experience</h2>
+
+				<!-- Company -->
+				<div class="company">
+					<div class="company-header">
+						<div>
+							<h3 class="company-name">Company Name</h3>
+							<span class="company-meta">Full-time · X yrs Y mos</span>
+						</div>
+					</div>
+
+					<div class="timeline">
+						<div class="role">
+							<div class="marker">
+								<span class="dot"></span>
+								<span class="line"></span>
+							</div>
+							<div class="content">
+								<h4>Current Role</h4>
+							</div>
+						</div>
+
+						<div class="role">
+							<div class="marker">
+								<span class="dot"></span>
+							</div>
+							<div class="content">
+								<h4>Previous Role</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Company -->
+				<div class="company">
+					<div class="company-header">
+						<div>
+							<h3 class="company-name">Another Company</h3>
+							<span class="company-meta">Internship · X mos</span>
+						</div>
+					</div>
+
+					<div class="timeline">
+						<div class="role">
+							<div class="marker">
+								<span class="dot"></span>
+							</div>
+							<div class="content">
+								<h4>Role Title</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="tech-stack">
+				<h2>Tech Stack</h2>
+
+				<div class="stack-group">
+					<h3>Frontend</h3>
+					<div class="logos">
+						<img src="https://cdn.simpleicons.org/react" alt="React" title="React" />
+						<img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" title="TypeScript" />
+						<img src="https://cdn.simpleicons.org/astro" alt="Astro" title="Astro" />
+					</div>
+				</div>
+
+				<div class="stack-group">
+					<h3>Backend</h3>
+					<div class="logos">
+						<img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js" title="Node.js" />
+						<img src="https://cdn.simpleicons.org/python" alt="Python" title="Python" />
+					</div>
+				</div>
+
+				<div class="stack-group">
+					<h3>Database</h3>
+					<div class="logos">
+						<img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL" title="PostgreSQL" />
+						<img src="https://cdn.simpleicons.org/redis" alt="Redis" title="Redis" />
+					</div>
+				</div>
+
+				<div class="stack-group">
+					<h3>Cloud & DevOps</h3>
+					<div class="logos">
+						<img src="https://cdn.simpleicons.org/docker" alt="Docker" title="Docker" />
+						<img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes" title="Kubernetes" />
+					</div>
+				</div>
+			</section>
+
+			<section class="specialties">
+				<div class="card">
+					<h3>Specialty One</h3>
+					<p>
+						Short description of this area of focus and why it matters to the
+						work you do.
+					</p>
+					<span>Keyword · Keyword · Keyword</span>
+				</div>
+
+				<div class="card">
+					<h3>Specialty Two</h3>
+					<p>
+						Short description of this area of focus and why it matters to the
+						work you do.
+					</p>
+					<span>Keyword · Keyword</span>
+				</div>
+
+				<div class="card">
+					<h3>Specialty Three</h3>
+					<p>
+						Short description of this area of focus and why it matters to the
+						work you do.
+					</p>
+					<span>Keyword · Keyword · Keyword</span>
+				</div>
+			</section>
+
+			<section class="skills">
+				<h2>Skills</h2>
+
+				<div class="grid">
+					<div>
+						<h4>Category One</h4>
+						<ul>
+							<li>Skill</li>
+							<li>Skill</li>
+							<li>Skill</li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Category Two</h4>
+						<ul>
+							<li>Skill</li>
+							<li>Skill</li>
+							<li>Skill</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	section {
+		max-width: 960px;
+		margin: 5rem auto;
+		padding: 0 1.5rem;
+	}
+
+	.eyebrow {
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		letter-spacing: 0.1em;
+		color: #6366f1;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin: 0.5rem 0 1rem;
+		line-height: 1.2;
+	}
+
+	.lead {
+		font-size: 1.1rem;
+		color: #444;
+		max-width: 720px;
+	}
+
+	.specialties {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.card {
+		padding: 1.5rem;
+		border: 1px solid #e5e7eb;
+		border-radius: 12px;
+		background: #fff;
+	}
+
+	.card h3 {
+		margin-bottom: 0.5rem;
+	}
+
+	.card span {
+		display: block;
+		margin-top: 1rem;
+		font-size: 0.85rem;
+		color: #6b7280;
+	}
+
+	.skills .grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	h4 {
+		margin-bottom: 0.5rem;
+	}
+
+	ul {
+		padding-left: 1rem;
+		color: #4b5563;
+	}
+
+	li {
+		margin-bottom: 0.4rem;
+	}
+
+	.hero-title {
+		font-size: clamp(2.8rem, 7vw, 4.2rem);
+		font-weight: 800;
+		background: linear-gradient(90deg, #6366f1, #22c55e);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		letter-spacing: -0.03em;
+	}
+
+	.subtitle {
+		font-weight: 400;
+		letter-spacing: 0.4px;
+		opacity: 0.7;
+	}
+
+	.tech-stack h2 {
+		margin-bottom: 3rem;
+	}
+
+	.stack-group {
+		margin-bottom: 3rem;
+	}
+
+	.stack-group h3 {
+		font-size: 1rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: #6b7280;
+		margin-bottom: 1.2rem;
+	}
+
+	.logos {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+		gap: 1.5rem;
+		align-items: center;
+	}
+
+	.logos img {
+		width: 36px;
+		height: 36px;
+		opacity: 0.8;
+		transition:
+			opacity 0.2s ease,
+			transform 0.2s ease;
+	}
+
+	.logos img:hover {
+		opacity: 1;
+		transform: translateY(-2px) scale(1.05);
+	}
+
+	.experience {
+		max-width: 900px;
+	}
+
+	.company {
+		margin-bottom: 4rem;
+	}
+
+	.company-name {
+		margin: 0;
+		font-size: 1.1rem;
+	}
+
+	.company-meta {
+		font-size: 0.85rem;
+		color: #6b7280;
+	}
+
+	.timeline {
+		margin-top: 2rem;
+	}
+
+	.role {
+		display: grid;
+		grid-template-columns: 40px 1fr;
+		gap: 1rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.marker {
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+
+	.dot {
+		width: 14px;
+		height: 14px;
+		background: #2563eb;
+		border-radius: 50%;
+		z-index: 2;
+	}
+
+	.line {
+		position: absolute;
+		top: 18px;
+		bottom: -28px;
+		width: 2px;
+		background: #e5e7eb;
+	}
+
+	.role:last-child .line {
+		display: none;
+	}
+
+	.content h4 {
+		font-size: 1.05rem;
+		font-weight: 600;
+	}
+</style>
